@@ -1,0 +1,17 @@
+{
+  "component": true,
+  "usingComponents": {
+    "nav-bar": "/components/diy/navBar/navBar",
+    "search": "/components/diy/search/search",
+    "banner": "/components/diy/banner/banner",
+    "imagesingle": "/components/diy/imagesingle/imagesingle",
+    "windows": "/components/diy/window/window",
+    "videos": "/components/diy/videos/videos",
+    "notice": "/components/diy/notice/notice",
+    "rich-text": "/components/diy/richText/richText",
+    "store": "/components/diy/store/store",
+    "blank": "/components/diy/blank/blank",
+    "guide": "/components/diy/guide/guide",
+    "product": "/components/diy/product/product"
+  }
+}

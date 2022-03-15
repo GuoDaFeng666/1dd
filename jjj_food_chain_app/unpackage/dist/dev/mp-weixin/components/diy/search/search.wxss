@@ -1,0 +1,49 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*search*/
+.diy-search-style-3 {}
+.diy-search-style-6 {
+	border-radius: 16rpx;
+}
+.diy-search-style-9 {
+	border-radius: 50rpx;
+}
+.diy-search-textAlign-3 {
+	justify-content: flex-start;
+}
+.diy-search-textAlign-6 {
+	justify-content: center;
+}
+.diy-search-textAlign-9 {
+	justify-content: flex-end;
+}
+.diy-search .svg-icon {
+	margin-right: 10rpx;
+}
+

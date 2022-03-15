@@ -1,0 +1,59 @@
+
+.address-form .key-name {
+	width: 200rpx;
+}
+.address-form .btn-red {
+	height: 88rpx;
+	line-height: 88rpx;
+	border-radius: 44rpx;
+	box-shadow: 0 8rpx 16rpx 0 rgba(226, 35, 26, .6);
+}
+.setup-btn {
+	position: fixed;
+	bottom: 20rpx;
+	left: 5%;
+	width: 90%;
+	height: 80rpx;
+	line-height: 80rpx;
+	border-radius: 80rpx;
+	background-color: #fd3826;
+	color: #fff;
+	font-size: 30rpx;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+}
+.make-item {
+	height: 60rpx;
+}
+.pop-input {
+	width: 100%;
+	margin: 26rpx 0;
+	box-sizing: border-box;
+	border-bottom: 2rpx solid #D9D9D9;
+	line-height: 60rpx;
+}
+.pop-input input {
+	width: 100%;
+	padding-left: 15rpx;
+
+	font-size: 26rpx;
+	color: #333333;
+	margin: 16rpx 0;
+	text-align: left;
+	height: 60rpx;
+	line-height: 60rpx;
+}
+.pop-input .icon.icon-guanbi {
+	width: 38rpx;
+	height: 38rpx;
+	background-color: #999999;
+	color: #FFFFFF;
+	font-size: 22rpx;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	opacity: 0.8;
+}
+

@@ -1,0 +1,32 @@
+
+.info {
+	font-size: 33rpx;
+	line-height: 43rpx;
+}
+.add-addr {
+	display: flex;
+	align-items: center;
+}
+.tel {
+	font-size: 27rpx;
+	color: #999999;
+}
+.choose-address {
+	width: 88rpx;
+	height: 88rpx;
+	margin-right: 35rpx;
+}
+.icon-dizhi {
+	margin-right: 25rpx;
+	color: #ff6633;
+	font-size: 60rpx;
+}
+.addree_icon {
+	width: 42rpx;
+	height: 42rpx;
+}
+.my_info {
+	background-color: #FFFFFF;
+	margin-top: 16rpx;
+}
+

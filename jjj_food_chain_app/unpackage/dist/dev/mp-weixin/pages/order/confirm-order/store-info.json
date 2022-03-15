@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "adress": "/pages/order/confirm-order/address/address"
+  }
+}

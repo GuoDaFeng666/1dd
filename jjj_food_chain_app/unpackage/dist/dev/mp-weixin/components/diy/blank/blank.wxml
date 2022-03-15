@@ -1,0 +1,1 @@
+<view class="diy-blank" style="{{'height:'+(itemData.style.height+'px')+';'+('background:'+(itemData.style.background)+';')}}"></view>

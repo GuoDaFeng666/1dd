@@ -1,0 +1,1 @@
+<block wx:if="{{loadding}}"><view class="request-loading-view data-v-eb4cbd66"><view class="loading-view data-v-eb4cbd66"><image class="loading-img data-v-eb4cbd66" src="../static/loading.gif" mode></image></view></view></block>

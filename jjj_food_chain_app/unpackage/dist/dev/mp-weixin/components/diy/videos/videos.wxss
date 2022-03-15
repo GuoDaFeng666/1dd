@@ -1,0 +1,7 @@
+
+.diy-video uni-video,
+.diy-video video {
+	width: 100%;
+	border-radius: 12rpx;
+}
+

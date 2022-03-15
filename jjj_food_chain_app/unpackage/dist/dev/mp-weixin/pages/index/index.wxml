@@ -1,0 +1,1 @@
+<view data-theme="{{$root.m0}}"><diy style="position:relative;" vue-id="8dd740cc-1" diyItems="{{items}}" bind:__l="__l"></diy></view>

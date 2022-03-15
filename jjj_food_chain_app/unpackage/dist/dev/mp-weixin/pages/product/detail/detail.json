@@ -1,0 +1,10 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarTitleText": "商品详情",
+  "usingComponents": {
+    "spec": "/pages/product/detail/popup/spec",
+    "share": "/pages/product/detail/popup/share",
+    "uni-popup": "/components/uni-popup",
+    "guarantee": "/components/guarantee"
+  }
+}

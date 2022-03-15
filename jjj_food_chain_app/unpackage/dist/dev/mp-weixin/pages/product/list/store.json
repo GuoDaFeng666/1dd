@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "堂食点餐",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "popup-layer": "/components/popup-layer/popup-layer",
+    "modal": "/components/modal/modal",
+    "prospec": "/pages/product/list/popup/spec"
+  }
+}

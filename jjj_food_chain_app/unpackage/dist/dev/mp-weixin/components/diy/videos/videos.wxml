@@ -1,0 +1,1 @@
+<view class="diy-video" style="{{'padding:'+(itemData.style.paddingTop+'px 20rpx')+';'}}"><video style="{{'height:'+(itemData.style.height+'px')+';'}}" src="{{itemData.params.videoUrl}}" poster="{{itemData.params.poster}}" autoplay="{{itemData.params.autoplay=='1'}}" controls="{{true}}" objectFit="contain"></video></view>

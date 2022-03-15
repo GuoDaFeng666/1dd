@@ -1,0 +1,1 @@
+<view><view class="diy-richText" style="{{'background:'+(itemData.style.background)+';'+('padding:'+(itemData.style.paddingTop+'px '+itemData.style.paddingLeft+'px')+';')}}"><rich-text nodes="{{$root.m0}}"></rich-text></view></view>
