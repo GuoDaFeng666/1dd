@@ -4,22 +4,7 @@
 
 基于thinkphp6+element-ui+uniapp打造的面向开发的小程序商城，方便二次开发或直接使用，可发布到多端，包括微信小程序、微信公众号、QQ小程序、支付宝小程序、字节跳动小程序、百度小程序、android端、ios端。
 
-**小程序截图**
-
-
-| ![输入图片说明](https://images.gitee.com/uploads/images/2021/0925/171322_5f691e6e_1699189.jpeg "1.jpg") | ![输入图片说明](https://images.gitee.com/uploads/images/2021/0925/171334_b5339717_1699189.jpeg "2.jpg") |
-| --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| ![输入图片说明](https://images.gitee.com/uploads/images/2021/0925/171543_1ff039d8_1699189.jpeg "3.jpg") | ![输入图片说明](https://images.gitee.com/uploads/images/2021/0925/171555_f64ebfa9_1699189.jpeg "4.jpg") |
-| ![输入图片说明](https://images.gitee.com/uploads/images/2021/0925/171622_f01c4c17_1699189.jpeg "5.jpg") | ![输入图片说明](https://images.gitee.com/uploads/images/2021/0925/171633_c82a1010_1699189.jpeg "6.jpg") |
-
-**后台截图**
-
-
-| ![输入图片说明](https://images.gitee.com/uploads/images/2021/0925/172538_a041a251_1699189.png "11.png") | ![输入图片说明](https://images.gitee.com/uploads/images/2021/0925/172550_62826b56_1699189.png "22.png") |
-| --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| ![输入图片说明](https://images.gitee.com/uploads/images/2021/0925/172649_53b7d002_1699189.png "33.png") | ![输入图片说明](https://images.gitee.com/uploads/images/2021/0925/172702_68da5d24_1699189.png "44.png") |
-| ![输入图片说明](https://images.gitee.com/uploads/images/2021/0925/172720_0846dfd3_1699189.png "55.png") | ![输入图片说明](https://images.gitee.com/uploads/images/2021/0925/172734_29a91fb5_1699189.png "66.png") |
-
+*
 **软件架构**
 
 后端：thinkphp6 管理端页面：element-ui 小程序端：uniapp。
