@@ -20,42 +20,6 @@ class UserGrade
     }
 
     /**
-     * 设置用户的会员等级
-     */
-    private function setUserGrade($userId)
-    {
-        // 用户模型
-        $user = UserModel::detail($userId);
-        // 获取所有等级
-        $list = GradeModel::getUsableList($user['app_id']);
-        if ($list->isEmpty()) {
-            return false;
-        }
-        // 遍历等级，根据升级条件 查询满足消费金额的用户列表，并且他的等级小于该等级
-        $upgradeGrade = null;
-        foreach ($list as $grade) {
-            if($grade['is_default'] == 1){
-                continue;
-            }
-            $is_upgrade = $this->checkCanUpdate($user, $grade);
-            if($is_upgrade){
-                $upgradeGrade = $grade;
-                continue;
-            }else{
-                break;
-            }
-        }
-        if($upgradeGrade){
-            $this->dologs('setUserGrade', [
-                'user_id' => $user['user_id'],
-                'grade_id' => $upgradeGrade['grade_id'],
-            ]);
-            // 修改会员的等级
-            (new UserModel())->upgradeGrade($user, $grade);
-        }
-    }
-
-    /**
      * 查询满足会员等级升级条件的用户列表
      */
     public function checkCanUpdate($user, $grade)

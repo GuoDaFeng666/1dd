@@ -3,8 +3,6 @@
 namespace app\shop\controller;
 
 use app\common\exception\BaseException;
-use app\common\model\settings\Setting;
-use app\common\model\shop\OptLog as OptLogModel;
 use app\JjjController;
 use app\shop\service\AuthService;
 
@@ -49,8 +47,6 @@ class Controller extends JjjController
         $this->getRouteinfo();
         //  验证登录状态
         $this->checkLogin();
-        // 写入操作日志
-        $this->saveOptLog();
         // 验证当前页面权限
         $this->checkPrivilege();
     }
@@ -97,34 +93,6 @@ class Controller extends JjjController
             return true;
         }
         throw new BaseException(['code' => -1, 'msg' => 'not_login']);
-        return false;
-    }
-
-    /**
-     * 操作日志
-     */
-    private function saveOptLog(){
-        $shop_user_id = $this->store['user']['shop_user_id'];
-        if(!$shop_user_id){
-            return;
-        }
-        // 如果不记录查询日志
-        $config = Setting::getItem('store');
-        if(!$config || !$config['is_get_log']){
-            return;
-        }
-        $model = new OptLogModel();
-        $model->save([
-            'shop_user_id' => $shop_user_id,
-            'ip' => \request()->ip(),
-            'request_type' => $this->request->isGet()?'Get':'Post',
-            'url' => $this->routeUri,
-            'content' => json_encode($this->request->param(), JSON_UNESCAPED_UNICODE),
-            'browser' => get_client_browser(),
-            'agent' => $_SERVER['HTTP_USER_AGENT'],
-            'title' => AuthService::getAccessNameByPath($this->routeUri, $this->store['app']['app_id']),
-            'app_id' => $this->store['app']['app_id']
-        ]);
     }
 
 }

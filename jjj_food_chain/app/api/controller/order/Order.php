@@ -62,13 +62,4 @@ class Order extends Controller
             'order_type' => OrderTypeEnum::MASTER, //订单类型
         ]);
     }
-
-    /**
-     * 是否开启app支付宝支付
-     */
-    private function isAppAlipayOpen($app_id)
-    {
-        $config = AppOpenModel::getAppOpenCache($app_id);
-        return $config['is_alipay'] == 1 ? true : false;
-    }
 }

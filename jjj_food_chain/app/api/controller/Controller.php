@@ -21,7 +21,6 @@ class Controller extends JjjController
 
     /**
      * 后台初始化
-     * @throws BaseException
      */
     public function initialize()
     {
@@ -33,7 +32,6 @@ class Controller extends JjjController
 
     /**
      * 获取当前应用ID
-     * @throws BaseException
      */
     private function getAppId()
     {
@@ -45,7 +43,6 @@ class Controller extends JjjController
 
     /**
      * 验证当前小程序状态
-     * @throws BaseException
      */
     private function checkWxapp()
     {
@@ -60,7 +57,6 @@ class Controller extends JjjController
 
     /**
      * 获取当前用户信息
-     * @throws BaseException
      */
     protected function getUser($is_force = true)
     {
@@ -83,7 +79,7 @@ class Controller extends JjjController
         return $user;
     }
 
-    protected function getShareParams($url, $title = '', $desc = '', $link = '', $imgUrl = ''): array
+    protected function getShareParams($url, $title = '', $desc = '', $link = '', $imgUrl = '')
     {
         $signPackage = '';
         $shareParams = '';

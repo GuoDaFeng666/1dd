@@ -6,7 +6,6 @@ use app\admin\model\page\Page as PageModel;
 use app\admin\model\Shop as ShopUser;
 use app\common\model\app\App as AppModel;
 use app\admin\model\user\Grade as GradeModel;
-//use app\admin\model\supplier\Supplier as SupplierModel;  20220311注释 git源码不完整
 use app\common\model\product\Category as CategoryModel;
 
 class App extends AppModel
@@ -17,7 +16,7 @@ class App extends AppModel
     public function getList($limit, $is_recycle = false)
     {
         return $this->alias('app')->field(['app.*,user.user_name'])->where('is_recycle', '=', (int)$is_recycle)
-            ->join('shop_user user', 'user.app_id = app.app_id', 'left')  // 20220311注释 git源码不完整
+            ->join('shop_user user', 'user.app_id = app.app_id', 'left')
             ->where('user.is_super', '=', 1)
             ->where('app.is_delete', '=', 0)
             ->order(['create_time' => 'asc'])
@@ -51,14 +50,10 @@ class App extends AppModel
             (new PageModel)->insertDefault($this['app_id']);
             // 默认等级
             (new GradeModel)->insertDefault($this['app_id']);
-            //新增门店  20220311注释 git源码不完整
-//            $SupplierModel = new SupplierModel;
-//            $SupplierModel->add($data, $this['app_id']);
-//            //新增特殊分类
-//            (new CategoryModel)->addSpecial($this['app_id']);
-//            $ShopUser->save(['shop_supplier_id'=>$SupplierModel->shop_supplier_id]);
-//            $this->commit();
-//            return true;
+            //新增特殊分类
+            (new CategoryModel)->addSpecial($this['app_id']);
+            $this->commit();
+            return true;
         } catch (\Exception $e) {
             $this->error = $e->getMessage();
             $this->rollback();
