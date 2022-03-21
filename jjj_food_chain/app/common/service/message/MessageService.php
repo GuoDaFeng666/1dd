@@ -53,27 +53,6 @@ class MessageService
     }
 
     /**
-     * 商家短信通知
-     */
-    private function newOrder($order, $data, $orderType = OrderTypeEnum::MASTER)
-    {
-        $message = MessageModel::detailByEname('order_pay_store');
-        $settings = MessageSettingsModel::detailByMessageId($message['message_id']);
-        if (!$settings || $settings['sms_status'] == 0) {
-            return;
-        }
-        // 商家短信通知
-        //$smsConfig = SettingModel::getItem('sms', $order['app_id']);
-        //$phone = $smsConfig['engine']['aliyun']['accept_phone'];
-
-        /*if(empty($phone)){
-            return;
-        }*/
-
-        //SmsMessageService::send($data, $settings['sms_template'], $phone, $order['app_id']);
-    }
-
-    /**
      * 后台发货通知
      */
     public function delivery($order, $orderType = OrderTypeEnum::MASTER)

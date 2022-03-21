@@ -172,17 +172,6 @@ class ShopService
         return number_format($this->OrderModel->getReviewOrderTotal($shop_supplier_id));
     }
 
-    /**
-     * 获取订单总量 (指定日期)
-     */
-    private function getOrderTotalByDate($days)
-    {
-        $data = [];
-        foreach ($days as $day) {
-            $data[] = $this->getOrderTotal($day);
-        }
-        return $data;
-    }
 
     /**
      * 获取供应商总量
@@ -199,18 +188,6 @@ class ShopService
     private function getOrderTotalPrice($day = null, $shop_supplier_id = 0)
     {
         return sprintf('%.2f', $this->OrderModel->getOrderTotalPrice($day, null, $shop_supplier_id));
-    }
-
-    /**
-     * 获取订单总量 (指定日期)
-     */
-    private function getOrderTotalPriceByDate($days)
-    {
-        $data = [];
-        foreach ($days as $day) {
-            $data[] = $this->getOrderTotalPrice($day);
-        }
-        return $data;
     }
 
     /**
