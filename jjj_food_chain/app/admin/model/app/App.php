@@ -6,6 +6,7 @@ use app\admin\model\page\Page as PageModel;
 use app\admin\model\Shop as ShopUser;
 use app\common\model\app\App as AppModel;
 use app\admin\model\user\Grade as GradeModel;
+use app\admin\model\supplier\Supplier as SupplierModel;
 use app\common\model\product\Category as CategoryModel;
 
 class App extends AppModel
@@ -50,8 +51,12 @@ class App extends AppModel
             (new PageModel)->insertDefault($this['app_id']);
             // 默认等级
             (new GradeModel)->insertDefault($this['app_id']);
+            //新增门店
+            $SupplierModel = new SupplierModel;
+            $SupplierModel->add($data, $this['app_id']);
             //新增特殊分类
             (new CategoryModel)->addSpecial($this['app_id']);
+            $ShopUser->save(['shop_supplier_id'=>$SupplierModel->shop_supplier_id]);
             $this->commit();
             return true;
         } catch (\Exception $e) {

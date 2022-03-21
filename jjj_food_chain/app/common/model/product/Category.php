@@ -58,8 +58,7 @@ class Category extends BaseModel
                     array_push($twoTree, $two);
                 }
                 if (!empty($twoTree)) {
-                    $temp_two_tree = array_column($twoTree, 'sort');
-                    array_multisort($temp_two_tree, SORT_ASC, $twoTree);
+                    array_multisort(array_column($twoTree, 'sort'), SORT_ASC, $twoTree);
                     $first['child'] = $twoTree;
                 }
                 array_push($tree, $first);

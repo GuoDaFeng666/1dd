@@ -1,3 +1,0 @@
-[2022-03-11T11:39:29+08:00][error] [-1]not_login[E:\code\jjj-code\jjjfood\jjj_food_chain\app\shop\controller\Controller.php:99]
-[2022-03-11T11:40:14+08:00][error] [8]未定义数组索引: username[E:\code\jjj-code\jjjfood\jjj_food_chain\app\admin\model\admin\User.php:19]
-[2022-03-11T11:40:37+08:00][error] [-1]not_login[E:\code\jjj-code\jjjfood\jjj_food_chain\app\admin\controller\Controller.php:77]

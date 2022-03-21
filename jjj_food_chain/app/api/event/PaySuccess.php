@@ -50,4 +50,19 @@ class PaySuccess
         return $model->onPaySuccess($this->order);
     }
 
+    /**
+     * 发送订单
+     * @return bool
+     */
+    private function sendOrder()
+    {
+        $deliver = SettingModel::getSupplierItem('deliver', $this->order['supplier']['shop_supplier_id']);
+        if ($this->order['delivery_type']['value'] != 10 || $deliver['default'] == 'local') {
+            return true;
+        }
+        if ($deliver['engine']['dada']['auto'] == 0) {
+            return true;
+        }
+        $this->order->addOrder($deliver);
+    }
 }

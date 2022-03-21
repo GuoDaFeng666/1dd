@@ -2,6 +2,7 @@
 
 namespace app\api\model\page;
 use app\common\model\page\CenterMenu as CenterMenuModel;
+use app\common\model\user\User as UserModel;
 use think\facade\Cache;
 
 /**

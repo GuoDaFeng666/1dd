@@ -25,6 +25,22 @@ class Setting extends SettingModel
             ]) !== false;
     }
 
+    /**
+     * 数据验证
+     */
+    private function validValues($key, $values)
+    {
+        $callback = [
+            'store' => function ($values) {
+                return $this->validStore($values);
+            },
+            'printer' => function ($values) {
+                return $this->validPrinter($values);
+            },
+        ];
+        // 验证商城设置
+        return isset($callback[$key]) ? $callback[$key]($values) : true;
+    }
 
     /**
      * 验证商城设置

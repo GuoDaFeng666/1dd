@@ -4,6 +4,7 @@ namespace app\api\controller\user;
 
 use app\api\controller\Controller;
 use app\api\model\order\Order as OrderModel;
+use app\api\model\settings\Setting as SettingModel;
 use app\common\enum\order\OrderPayTypeEnum;
 
 /**
