@@ -2,3 +2,4 @@
 [2022-03-29T10:32:12+08:00][error] [8]Trying to access array offset on value of type null[E:\code\jjj-code\jjjfood\jjj_food_chain\app\shop\controller\Controller.php:92]
 [2022-03-29T10:36:26+08:00][error] [-1]not_login[E:\code\jjj-code\jjjfood\jjj_food_chain\app\shop\controller\Controller.php:95]
 [2022-03-29T10:36:28+08:00][error] [-1]not_login[E:\code\jjj-code\jjjfood\jjj_food_chain\app\shop\controller\Controller.php:95]
+[2022-03-29T11:02:26+08:00][error] [-1]not_login[E:\code\jjj-code\jjjfood\jjj_food_chain\app\shop\controller\Controller.php:95]
