@@ -1,0 +1,45 @@
+[2022-03-22T10:07:38+08:00][sql] CONNECT:[ UseTime:0.014359s ] mysql:host=127.0.0.1;port=3306;dbname=jjj_food_chain;charset=utf8mb4
+[2022-03-22T10:07:38+08:00][sql] SHOW FULL COLUMNS FROM `jjjfood_admin_user` [ RunTime:0.037819s ]
+[2022-03-22T10:07:38+08:00][sql] SELECT * FROM `jjjfood_admin_user` WHERE  `user_name` = 'admin'  AND `password` = '06e0213dcf92e986d383029494966903' LIMIT 1 [ RunTime:0.001435s ]
+[2022-03-22T10:07:40+08:00][sql] CONNECT:[ UseTime:0.001314s ] mysql:host=127.0.0.1;port=3306;dbname=jjj_food_chain;charset=utf8mb4
+[2022-03-22T10:07:40+08:00][sql] SHOW FULL COLUMNS FROM `jjjfood_app` [ RunTime:0.004332s ]
+[2022-03-22T10:07:40+08:00][sql] SELECT COUNT(*) AS think_count FROM `jjjfood_app` `app` LEFT JOIN `jjjfood_shop_user` `user` ON `user`.`app_id`=`app`.`app_id` WHERE  `is_recycle` = 0  AND `user`.`is_super` = 1  AND `app`.`is_delete` = 0 [ RunTime:0.029020s ]
+[2022-03-22T10:07:40+08:00][sql] SELECT app.*,user.user_name FROM `jjjfood_app` `app` LEFT JOIN `jjjfood_shop_user` `user` ON `user`.`app_id`=`app`.`app_id` WHERE  `is_recycle` = 0  AND `user`.`is_super` = 1  AND `app`.`is_delete` = 0 ORDER BY `create_time` ASC LIMIT 0,20 [ RunTime:0.000601s ]
+[2022-03-22T13:51:21+08:00][sql] CONNECT:[ UseTime:0.002060s ] mysql:host=127.0.0.1;port=3306;dbname=jjj_food_chain;charset=utf8mb4
+[2022-03-22T13:51:21+08:00][sql] SHOW FULL COLUMNS FROM `jjjfood_app` [ RunTime:0.002556s ]
+[2022-03-22T13:51:21+08:00][sql] SELECT COUNT(*) AS think_count FROM `jjjfood_app` `app` LEFT JOIN `jjjfood_shop_user` `user` ON `user`.`app_id`=`app`.`app_id` WHERE  `is_recycle` = 0  AND `user`.`is_super` = 1  AND `app`.`is_delete` = 0 [ RunTime:0.002044s ]
+[2022-03-22T13:51:21+08:00][sql] SELECT app.*,user.user_name FROM `jjjfood_app` `app` LEFT JOIN `jjjfood_shop_user` `user` ON `user`.`app_id`=`app`.`app_id` WHERE  `is_recycle` = 0  AND `user`.`is_super` = 1  AND `app`.`is_delete` = 0 ORDER BY `create_time` ASC LIMIT 0,20 [ RunTime:0.000443s ]
+[2022-03-22T13:51:25+08:00][sql] CONNECT:[ UseTime:0.012326s ] mysql:host=127.0.0.1;port=3306;dbname=jjj_food_chain;charset=utf8mb4
+[2022-03-22T13:51:25+08:00][sql] SHOW FULL COLUMNS FROM `jjjfood_app` [ RunTime:0.002699s ]
+[2022-03-22T13:51:25+08:00][sql] SELECT * FROM `jjjfood_app` WHERE  `app_id` = 10012 LIMIT 1 [ RunTime:0.000552s ]
+[2022-03-22T13:51:25+08:00][sql] UPDATE `jjjfood_app`  SET `is_delete` = 1 , `update_time` = 1647928285  WHERE  `app_id` = 10012 [ RunTime:0.000623s ]
+[2022-03-22T13:51:29+08:00][sql] CONNECT:[ UseTime:0.001303s ] mysql:host=127.0.0.1;port=3306;dbname=jjj_food_chain;charset=utf8mb4
+[2022-03-22T13:51:29+08:00][sql] SHOW FULL COLUMNS FROM `jjjfood_app` [ RunTime:0.002283s ]
+[2022-03-22T13:51:29+08:00][sql] SELECT COUNT(*) AS think_count FROM `jjjfood_app` `app` LEFT JOIN `jjjfood_shop_user` `user` ON `user`.`app_id`=`app`.`app_id` WHERE  `is_recycle` = 0  AND `user`.`is_super` = 1  AND `app`.`is_delete` = 0 [ RunTime:0.001905s ]
+[2022-03-22T13:51:29+08:00][sql] SELECT app.*,user.user_name FROM `jjjfood_app` `app` LEFT JOIN `jjjfood_shop_user` `user` ON `user`.`app_id`=`app`.`app_id` WHERE  `is_recycle` = 0  AND `user`.`is_super` = 1  AND `app`.`is_delete` = 0 ORDER BY `create_time` ASC LIMIT 0,20 [ RunTime:0.001830s ]
+[2022-03-22T13:51:31+08:00][sql] CONNECT:[ UseTime:0.001551s ] mysql:host=127.0.0.1;port=3306;dbname=jjj_food_chain;charset=utf8mb4
+[2022-03-22T13:51:31+08:00][sql] SHOW FULL COLUMNS FROM `jjjfood_app` [ RunTime:0.002709s ]
+[2022-03-22T13:51:31+08:00][sql] SELECT COUNT(*) AS think_count FROM `jjjfood_app` `app` LEFT JOIN `jjjfood_shop_user` `user` ON `user`.`app_id`=`app`.`app_id` WHERE  `is_recycle` = 0  AND `user`.`is_super` = 1  AND `app`.`is_delete` = 0 [ RunTime:0.001918s ]
+[2022-03-22T13:51:31+08:00][sql] SELECT app.*,user.user_name FROM `jjjfood_app` `app` LEFT JOIN `jjjfood_shop_user` `user` ON `user`.`app_id`=`app`.`app_id` WHERE  `is_recycle` = 0  AND `user`.`is_super` = 1  AND `app`.`is_delete` = 0 ORDER BY `create_time` ASC LIMIT 0,20 [ RunTime:0.000429s ]
+[2022-03-22T13:51:46+08:00][sql] CONNECT:[ UseTime:0.001441s ] mysql:host=127.0.0.1;port=3306;dbname=jjj_food_chain;charset=utf8mb4
+[2022-03-22T13:51:46+08:00][sql] SHOW FULL COLUMNS FROM `jjjfood_app` [ RunTime:0.002266s ]
+[2022-03-22T13:51:46+08:00][sql] SHOW FULL COLUMNS FROM `jjjfood_shop_user` [ RunTime:0.002550s ]
+[2022-03-22T13:51:46+08:00][sql] SELECT `shop_user_id` FROM `jjjfood_shop_user` WHERE  `user_name` = '8888' LIMIT 1 [ RunTime:0.000832s ]
+[2022-03-22T13:51:46+08:00][sql] INSERT INTO `jjjfood_app` SET `is_chain` = 0 , `app_name` = '8888' , `create_time` = 1647928306 , `update_time` = 1647928306 [ RunTime:0.000404s ]
+[2022-03-22T13:51:46+08:00][sql] SELECT `shop_user_id` FROM `jjjfood_shop_user` WHERE  `user_name` = '8888' LIMIT 1 [ RunTime:0.000333s ]
+[2022-03-22T13:51:46+08:00][sql] INSERT INTO `jjjfood_shop_user` SET `user_name` = '8888' , `password` = '06e0213dcf92e986d383029494966903' , `app_id` = 10013 , `is_super` = 1 , `create_time` = 1647928306 , `update_time` = 1647928306 [ RunTime:0.000342s ]
+[2022-03-22T13:51:46+08:00][sql] SHOW FULL COLUMNS FROM `jjjfood_page` [ RunTime:0.029452s ]
+[2022-03-22T13:51:46+08:00][sql] INSERT INTO `jjjfood_page` SET `page_type` = 10 , `page_name` = '首页' , `page_data` = '{\"page\":{\"type\":\"page\",\"name\":\"\\u9875\\u9762\\u8bbe\\u7f6e\",\"params\":{\"name\":\"\\u9875\\u9762\\u6807\\u9898\",\"title\":\"\\u9875\\u9762\\u6807\\u9898\",\"share_title\":\"\\u5206\\u4eab\\u6807\\u9898\"},\"style\":{\"titleTextColor\":\"black\",\"titleBackgroundColor\":\"#ffffff\"}},\"items\":[{\"type\":\"search\",\"name\":\"\\u641c\\u7d22\\u6846\",\"params\":{\"placeholder\":\"\\u641c\\u7d22\\u5546\\u54c1\"},\"style\":{\"textAlign\":\"center\",\"searchStyle\":\"radius\"}},{\"type\":\"banner\",\"name\":\"\\u56fe\\u7247\\u8f6e\\u64ad\",\"style\":{\"btnColor\":\"#ffffff\",\"btnShape\":\"round\"},\"params\":{\"interval\":\"2800\"},\"data\":[{\"imgUrl\":\"http:\\/\\/localhost:8081\\/assets\\/store\\/img\\/diy\\/banner\\/01.png\",\"linkUrl\":\"\"},{\"imgUrl\":\"http:\\/\\/localhost:8081\\/assets\\/store\\/img\\/diy\\/banner\\/01.png\",\"linkUrl\":\"\"}]}]}' , `app_id` = 10013 , `create_time` = 1647928306 , `update_time` = 1647928306 [ RunTime:0.000510s ]
+[2022-03-22T13:51:46+08:00][sql] SHOW FULL COLUMNS FROM `jjjfood_user_grade` [ RunTime:0.019818s ]
+[2022-03-22T13:51:46+08:00][sql] INSERT INTO `jjjfood_user_grade` SET `name` = '普通会员' , `is_default` = 1 , `remark` = '新用户即为该等级' , `app_id` = 10013 , `create_time` = 1647928306 , `update_time` = 1647928306 [ RunTime:0.000951s ]
+[2022-03-22T13:51:46+08:00][sql] SHOW FULL COLUMNS FROM `jjjfood_category` [ RunTime:0.015495s ]
+[2022-03-22T13:51:46+08:00][sql] INSERT INTO `jjjfood_category` SET `name` = '新品' , `is_special` = 1 , `type` = 0 , `app_id` = 10013 , `create_time` = 1647928306 , `update_time` = 1647928306 [ RunTime:0.000383s ]
+[2022-03-22T13:51:46+08:00][sql] INSERT INTO `jjjfood_category` SET `name` = '热卖' , `is_special` = 1 , `type` = 0 , `app_id` = 10013 , `create_time` = 1647928306 , `update_time` = 1647928306 [ RunTime:0.000250s ]
+[2022-03-22T13:51:46+08:00][sql] INSERT INTO `jjjfood_category` SET `name` = '套餐' , `is_special` = 1 , `type` = 0 , `app_id` = 10013 , `create_time` = 1647928306 , `update_time` = 1647928306 [ RunTime:0.000242s ]
+[2022-03-22T13:51:46+08:00][sql] INSERT INTO `jjjfood_category` SET `name` = '新品' , `is_special` = 1 , `type` = 1 , `app_id` = 10013 , `create_time` = 1647928306 , `update_time` = 1647928306 [ RunTime:0.000242s ]
+[2022-03-22T13:51:46+08:00][sql] INSERT INTO `jjjfood_category` SET `name` = '热卖' , `is_special` = 1 , `type` = 1 , `app_id` = 10013 , `create_time` = 1647928306 , `update_time` = 1647928306 [ RunTime:0.000271s ]
+[2022-03-22T13:51:46+08:00][sql] INSERT INTO `jjjfood_category` SET `name` = '套餐' , `is_special` = 1 , `type` = 1 , `app_id` = 10013 , `create_time` = 1647928306 , `update_time` = 1647928306 [ RunTime:0.000242s ]
+[2022-03-22T13:51:46+08:00][sql] CONNECT:[ UseTime:0.001426s ] mysql:host=127.0.0.1;port=3306;dbname=jjj_food_chain;charset=utf8mb4
+[2022-03-22T13:51:46+08:00][sql] SHOW FULL COLUMNS FROM `jjjfood_app` [ RunTime:0.080518s ]
+[2022-03-22T13:51:46+08:00][sql] SELECT COUNT(*) AS think_count FROM `jjjfood_app` `app` LEFT JOIN `jjjfood_shop_user` `user` ON `user`.`app_id`=`app`.`app_id` WHERE  `is_recycle` = 0  AND `user`.`is_super` = 1  AND `app`.`is_delete` = 0 [ RunTime:0.004477s ]
+[2022-03-22T13:51:46+08:00][sql] SELECT app.*,user.user_name FROM `jjjfood_app` `app` LEFT JOIN `jjjfood_shop_user` `user` ON `user`.`app_id`=`app`.`app_id` WHERE  `is_recycle` = 0  AND `user`.`is_super` = 1  AND `app`.`is_delete` = 0 ORDER BY `create_time` ASC LIMIT 0,20 [ RunTime:0.000538s ]
