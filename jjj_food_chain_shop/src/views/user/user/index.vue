@@ -8,20 +8,25 @@
     <!--搜索表单-->
     <div class="common-seach-wrap">
       <el-form size="small" :inline="true" :model="formInline" class="demo-form-inline">
-        <el-form-item label="昵称"><el-input v-model="formInline.nick_name" placeholder="请输入昵称"></el-input></el-form-item>
-       <!-- <el-form-item label="会员等级">
-          <el-select v-model="formInline.grade_id" placeholder="请选择">
-            <el-option label="全部" value="0"></el-option>
-            <el-option v-for="(item, index) in gradeList" :key="index" :label="item.name" :value="item.grade_id"></el-option>
-          </el-select>
-        </el-form-item> -->
+        <el-form-item label="昵称">
+          <el-input v-model="formInline.nick_name" placeholder="请输入昵称"></el-input>
+        </el-form-item>
+        <!-- <el-form-item label="会员等级">
+           <el-select v-model="formInline.grade_id" placeholder="请选择">
+             <el-option label="全部" value="0"></el-option>
+             <el-option v-for="(item, index) in gradeList" :key="index" :label="item.name" :value="item.grade_id"></el-option>
+           </el-select>
+         </el-form-item> -->
         <el-form-item label="注册时间">
           <div class="block">
             <span class="demonstration"></span>
-            <el-date-picker v-model="formInline.reg_date" type="daterange"  value-format="yyyy-MM-dd" range-separator="至" start-placeholder="开始日期" end-placeholder="结束日期"></el-date-picker>
+            <el-date-picker v-model="formInline.reg_date" type="daterange" value-format="yyyy-MM-dd" range-separator="至"
+                            start-placeholder="开始日期" end-placeholder="结束日期"></el-date-picker>
           </div>
         </el-form-item>
-        <el-form-item><el-button type="primary" icon="el-icon-search" @click="onSubmit">查询</el-button></el-form-item>
+        <el-form-item>
+          <el-button type="primary" icon="el-icon-search" @click="onSubmit">查询</el-button>
+        </el-form-item>
       </el-form>
     </div>
     <!--内容-->
@@ -32,7 +37,7 @@
           <el-table-column prop="nickName" label="昵称"></el-table-column>
           <el-table-column prop="nickName" label="微信头像">
             <template slot-scope="scope">
-              <img :src="scope.row.avatarUrl" width="30px" height="30px" />
+              <img :src="scope.row.avatarUrl" width="30px" height="30px"/>
             </template>
           </el-table-column>
           <el-table-column prop="gender" label="性别">
@@ -56,9 +61,11 @@
           <el-table-column prop="create_time" label="注册时间" width="140"></el-table-column>
           <el-table-column fixed="right" label="操作" width="160">
             <template slot-scope="scope">
-              <el-button @click="addClick(scope.row)" type="text" size="small" v-auth="'/user/user/recharge'">充值</el-button>
+              <el-button @click="addClick(scope.row)" type="text" size="small" v-auth="'/user/user/recharge'">充值
+              </el-button>
               <!-- <el-button @click="editClick(scope.row)" type="text" size="small" v-auth="'/user/user/grade'">会员等级</el-button> -->
-              <el-button @click="deleteClick(scope.row)" type="text" size="small" v-auth="'/user/user/delete'">删除</el-button>
+              <el-button @click="deleteClick(scope.row)" type="text" size="small" v-auth="'/user/user/delete'">删除
+              </el-button>
             </template>
           </el-table-column>
         </el-table>
@@ -79,10 +86,12 @@
     </div>
 
     <!--会员充值-->
-    <Recharge v-if="open_add" :open_add="open_add" :form="userModel" :gradeList="gradeList" @closeDialog="closeDialogFunc($event, 'add')"></Recharge>
+    <Recharge v-if="open_add" :open_add="open_add" :form="userModel" :gradeList="gradeList"
+              @closeDialog="closeDialogFunc($event, 'add')"></Recharge>
 
     <!--会员等级-->
-    <Grade v-if="open_edit" :open_edit="open_edit" :form="userModel" :gradeList="gradeList" @closeDialog="closeDialogFunc($event, 'edit')"></Grade>
+    <Grade v-if="open_edit" :open_edit="open_edit" :form="userModel" :gradeList="gradeList"
+           @closeDialog="closeDialogFunc($event, 'edit')"></Grade>
   </div>
 </template>
 
@@ -90,6 +99,7 @@
 import UserApi from '@/api/user.js';
 import Grade from './dialog/Grade.vue';
 import Recharge from './dialog/Recharge.vue';
+
 export default {
   components: {
     /*编辑组件*/
@@ -234,7 +244,11 @@ export default {
         .catch(() => {
           self.loading = false;
         });
+      console.log("Debug delete 用户 分割线:","-------------------------")
+      console.log('row:', row);
+      console.log('row.user_id：',row.user_id)
     }
+
   }
 };
 </script>
