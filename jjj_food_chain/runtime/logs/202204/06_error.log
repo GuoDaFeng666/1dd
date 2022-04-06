@@ -1,0 +1,5 @@
+[2022-04-06T14:52:35+08:00][error] [-1]not_login[E:\code\jjj-code\jjjfood_backup\jjj_food_chain\app\shop\controller\Controller.php:95]
+[2022-04-06T14:53:42+08:00][error] [8]未定义数组索引: nav[E:\code\jjj-code\jjjfood_backup\jjj_food_chain\app\common\model\settings\Setting.php:39]
+[2022-04-06T14:53:43+08:00][error] [8]未定义数组索引: nav[E:\code\jjj-code\jjjfood_backup\jjj_food_chain\app\common\model\settings\Setting.php:39]
+[2022-04-06T14:53:47+08:00][error] [8]未定义数组索引: nav[E:\code\jjj-code\jjjfood_backup\jjj_food_chain\app\common\model\settings\Setting.php:39]
+[2022-04-06T14:53:48+08:00][error] [-1]没有找到用户信息[E:\code\jjj-code\jjjfood_backup\jjj_food_chain\app\api\controller\Controller.php:71]
