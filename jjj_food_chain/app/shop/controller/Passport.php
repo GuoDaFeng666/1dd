@@ -20,8 +20,9 @@ class Passport extends Controller
         $user = $this->postData();
         // salt_hash将页面的密码进行加密处理
         $user['password'] = salt_hash($user['password']);
+        // 实例化对象的User模型，->  $model
         $model = new User();
-        // checkLogin() model\shop\Use.php
+        // 将$user ->  checkLogin()  ->model\shop\Uses.php
         if ($model->checkLogin($user)) {
             return $this->renderSuccess('登录成功', $user['username']);
         }
