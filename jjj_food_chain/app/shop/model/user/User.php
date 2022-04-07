@@ -8,7 +8,7 @@ use app\common\model\user\User as UserModel;
 use app\common\enum\user\grade\ChangeTypeEnum;
 use app\common\enum\user\balanceLog\BalanceLogSceneEnum as SceneEnum;
 use app\shop\model\user\PointsLog as PointsLogModel;
-use app\shop\model\plus\agent\User as AgentUserModel;
+//use app\shop\model\plus\agent\User as AgentUserModel; // 20220407注释
 /**
  * 用户模型
  */
@@ -78,14 +78,14 @@ class User extends UserModel
      */
     public function setDelete()
     {
-        // 判断是否为分销商
-        if (AgentUserModel::isAgentUser($this['user_id'])) {
-            $this->error = '当前用户为分销商，不可删除';
-            return false;
-        }
+        // 判断是否为分销商   20220407 分销商类模型在多商户中可找到
+//        if (AgentUserModel::isAgentUser($this['user_id'])) {
+//            $this->error = '当前用户为分销商，不可删除';
+//            return false;
+//        }
         return $this->transaction(function () {
             // 删除用户推荐关系
-            (new AgentUserModel)->onDeleteReferee($this['user_id']);
+//            (new AgentUserModel)->onDeleteReferee($this['user_id']); //20220407注释
             // 标记为已删除
             return $this->save(['is_delete' => 1]);
         });
