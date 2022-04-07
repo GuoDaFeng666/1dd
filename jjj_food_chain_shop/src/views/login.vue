@@ -88,6 +88,7 @@ export default {
       this.$refs.ruleForm.validate(valid => {
         if (valid) {
           this.logining = true;
+          // 用户名及密码的数组
           const Params = {
             username: this.ruleForm.account,
             password: this.ruleForm.checkPass

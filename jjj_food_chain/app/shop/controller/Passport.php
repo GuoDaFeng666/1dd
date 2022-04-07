@@ -14,11 +14,14 @@ class Passport extends Controller
      */
     public function login()
     {
-        //登录前清空session
+        // 登录前清空session
         session('jjjshop_store', null);
+        // $user接收页面提交过来的账户及密码
         $user = $this->postData();
+        // salt_hash将页面的密码进行加密处理
         $user['password'] = salt_hash($user['password']);
         $model = new User();
+        // checkLogin() model\shop\Use.php
         if ($model->checkLogin($user)) {
             return $this->renderSuccess('登录成功', $user['username']);
         }
