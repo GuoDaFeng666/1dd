@@ -73,7 +73,7 @@
         self.$refs.form.validate((valid) => {
           if (valid) {
             self.loading = true;
-            PorductApi.addSpec(params).then(data => {
+            PorductApi.addSpecs(params).then(data => {
               self.loading = false;
               self.$message({
                 message: '添加成功',

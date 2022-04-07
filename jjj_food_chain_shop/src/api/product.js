@@ -113,7 +113,7 @@ let ProductApi = {
         return request._post('/shop/product.store.product/state', data, errorback);
     },
     /*新增规格组*/
-    addSpec(data, errorback) {
+    addSpecs(data, errorback) {
         return request._post('/shop/product.spec/addSpec', data, errorback);
     },
     /*新增规格值*/

@@ -88,7 +88,7 @@ export default {
         spec_name: self.addGroupFrom.specName,
         spec_value: self.addGroupFrom.specValue
       };
-      PorductApi.addSpec(Params, true)
+      PorductApi.addSpecs(Params, true)
         .then(res => {
           self.groupLoading = false;
           // 记录规格数据
