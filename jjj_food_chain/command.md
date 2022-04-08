@@ -10,18 +10,15 @@ command [options] [arguments]
 Options:
 
 
-| command    | [options]        | [arguments]                                                                                              | 中文翻译 |
-| ------------ | ------------------ | ---------------------------------------------------------------------------------------------------------- | ---------- |
-| -h         | --help           | Display this help message                                                                                |          |
-| -V         | --version        | Do not output any message                                                                                |          |
-| -q         | --quiet          | Do not output any message                                                                                |          |
-|            | --ansi           | Force ANSI output                                                                                        |          |
-|            | --no-ansi        | Disable ANSI output                                                                                      |          |
-| -n         | --no-interaction | Do not ask any interactive question                                                                      |          |
-| -v, v ,vvv | --verbose        | Increase the verbosity of messages: 1 for normal output,<br /> 2 for more verbose output and 3 for debug |          |
-
-
-
+| command    | [options]        | [arguments]                                                                                                    | 中文翻译       |
+| ------------ | ------------------ | ---------------------------------------------------------------------------------------------------------------- | ---------------- |
+| -h         | --help           | Display this help message                                                                                      | 显示此帮助消息 |
+| -V         | --version        | Do not output any message                                                                                      |                |
+| -q         | --quiet          | Do not output any message                                                                                      |                |
+|            | --ansi           | Force ANSI output                                                                                              |                |
+|            | --no-ansi        | Disable ANSI output                                                                                            |                |
+| -n         | --no-interaction | Do not ask any interactive question                                                                            |                |
+| -v, v ,vvv | --verbose        | Increase the verbosity of messages: 1 for normal output,<br /> <br />2 for more verbose output and 3 for debug |                |
 
 
 Available commands:
