@@ -18,13 +18,13 @@
 #### Thinkphp Available commands(Thinkphp可用命令):
 
 
-| command         | [arguments]                                         | 中文翻译                         |
+| **command**     | **[arguments]**                                     | **中文翻译**                     |
 | ----------------- | ----------------------------------------------------- | ---------------------------------- |
-| build           | Build App Dirs                                      | 构建应用程序目录                 |
-| clear           | Clear runtime file                                  | 清除运行时文件                   |
-| help            | Displays help for a command                         | 显示命令的帮助                   |
-| job             | 定时任务                                            |                                  |
-| list            | Lists commands                                      | 列出命令                         |
+| **build**       | **Build App Dirs**                                  | **构建应用程序目录**             |
+| **clear**       | **Clear runtime file**                              | **清除运行时文件**               |
+| **help**        | **Displays help for a command**                     | **显示命令的帮助**               |
+| **job**         | **定时任务**                                        |                                  |
+| **list**        | **Lists commands**                                  | **列出命令**                     |
 | run             | PHP Built-in Server for ThinkPHP                    | ThinkPHP的PHP内置服务器          |
 | swoole          | Swoole HTTP Server for ThinkPHP                     | ThinkPHP的Swoole HTTP服务器      |
 | version         | show thinkphp framework version                     | 显示thinkphp框架版本             |
