@@ -1,13 +1,7 @@
 # Thinkphp 当前版本命令
 
-version 6.0.7
 
-Usage:
-command [options] [arguments]
-
-
-
-Options:
+PHP command Options(PHP命令选项):
 
 
 | command    | [options]        | [arguments]                                                                                              | 中文翻译                                                        |
@@ -21,7 +15,7 @@ Options:
 | -v, v ,vvv | --verbose        | Increase the verbosity of messages: 1 for normal output,<br /> 2 for more verbose output and 3 for debug | 增加消息的详细程度：1用于正常输出，2用于更详细的输出，3用于调试 |
 
 
-Available commands:
+Thinkphp Available commands(Thinkphp可用命令):
 
 
 | command         | [arguments]                                         | 中文翻译                         |
