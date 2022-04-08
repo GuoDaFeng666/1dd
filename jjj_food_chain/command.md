@@ -7,7 +7,6 @@ command [options] [arguments]
 
 Options:
 
-
 | command    | [options]        | [arguments]                                                                                              | 中文翻译 |
 | ------------ | ------------------ | ---------------------------------------------------------------------------------------------------------- | ---------- |
 | -h         | --help           | Display this help message                                                                                |          |
@@ -17,11 +16,8 @@ Options:
 |            | --no-ansi        | Disable ANSI output                                                                                      |          |
 | -n         | --no-interaction | Do not ask any interactive question                                                                      |          |
 | -v, v ,vvv | --verbose        | Increase the verbosity of messages: 1 for normal output,<br /> 2 for more verbose output and 3 for debug |          |
-|            |                  |                                                                                                          |          |
-|            |                  |                                                                                                          |          |
 
 Available commands:
-
 
 | command         | [options] | [arguments]                                         | 中文翻译 |
 | ----------------- | ----------- | ----------------------------------------------------- | ---------- |
