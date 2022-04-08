@@ -5,6 +5,12 @@ version 6.0.7
 Usage:
 command [options] [arguments]
 
+
+| command | [options] | [arguments]               |
+| --------- | ----------- | --------------------------- |
+| -h      | --help    | Display this help message |
+|         |           |                           |
+
 Options:
 -h, --help            Display this help message
 -V, --version         Display this console version
