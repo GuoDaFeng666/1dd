@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="JavaScriptLibraryMappings">
-    <file url="file://$PROJECT_DIR$/jjj_food_chain_admin" libraries="{jjjfood/jjj_food_chain_admin/node_modules}" />
-    <file url="file://$PROJECT_DIR$/jjj_food_chain_shop" libraries="{jjjfood/jjj_food_chain_shop/node_modules}" />
-    <file url="PROJECT" libraries="{@types/jquery, @types/scss-parser, jjjfood/jjj_food_chain_admin/node_modules, jjjfood/jjj_food_chain_shop/node_modules}" />
-    <includedPredefinedLibrary name="Node.js Core" />
-  </component>
-</project>
